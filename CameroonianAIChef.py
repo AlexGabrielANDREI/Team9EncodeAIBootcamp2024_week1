@@ -3,7 +3,7 @@ from openai import OpenAI
 
 client = OpenAI(api_key="xxxxx")
 
-# System messages defining Ion's unique personality and response types
+# System messages defining Ngono's unique personality and response types
 messages = [
     {
         "role": "system",
@@ -73,7 +73,7 @@ for chunk in stream:
 
 messages.append({"role": "system", "content": "".join(collected_messages)})
 
-# Allow continuous interaction with Ion for follow-up questions or new requests
+# Allow continuous interaction with Ngono for follow-up questions or new requests
 while True:
     print("\n")
     user_input = input("You can ask a follow-up question or enter a new request:\n")
